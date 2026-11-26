@@ -1,0 +1,37 @@
+
+RESULTADOS: PLANTVILLAGE (8782 imagenes)
+Accuracy especie: 99.86% | F1 macro: 0.9984
+Accuracy salud: 99.95% | F1 macro: 0.9995
+Accuracy conjunto exacto: 99.83%
+                         precision    recall  f1-score   support
+
+                  Apple     1.0000    0.9979    0.9990       970
+              Blueberry     0.9956    1.0000    0.9978       227
+Cherry_(including_sour)     0.9977    1.0000    0.9989       438
+           Corn_(maize)     1.0000    1.0000    1.0000       915
+                  Grape     0.9989    1.0000    0.9994       903
+                 Orange     1.0000    0.9960    0.9980       251
+                  Peach     1.0000    0.9978    0.9989       446
+           Pepper,_bell     0.9939    1.0000    0.9969       488
+                 Potato     0.9972    0.9972    0.9972       712
+              Raspberry     0.9955    0.9955    0.9955       223
+                Soybean     1.0000    0.9960    0.9980       252
+                 Squash     1.0000    1.0000    1.0000       217
+             Strawberry     1.0000    1.0000    1.0000       450
+                 Tomato     0.9987    0.9983    0.9985      2290
+
+               accuracy                         0.9986      8782
+              macro avg     0.9984    0.9985    0.9984      8782
+           weighted avg     0.9986    0.9986    0.9986      8782
+
+SALUD
+              precision    recall  f1-score   support
+
+        sana     0.9993    0.9993    0.9993      2785
+     enferma     0.9997    0.9997    0.9997      5997
+
+    accuracy                         0.9995      8782
+   macro avg     0.9995    0.9995    0.9995      8782
+weighted avg     0.9995    0.9995    0.9995      8782
+
+El F1 macro de la resumen usa especies presentes en las etiquetas reales. El reporte tambien muestra clases predichas sin soporte, si existen.

@@ -1,0 +1,8 @@
+{
+  "total_imagenes": 8782,
+  "accuracy_especie": 0.9986,
+  "f1_especie_macro": 0.9984,
+  "accuracy_salud": 0.9995,
+  "f1_salud_macro": 0.9995,
+  "accuracy_conjunta": 0.9983
+}

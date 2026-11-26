@@ -1,0 +1,7 @@
+path,motivo
+/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train/Potato leaf early blight/early-blight-closeup-NCSU.jpg,pixeles iguales con etiquetas contradictorias
+/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train/Tomato Early blight leaf/early-blight-closeup-sm.jpg,pixeles iguales con etiquetas contradictorias
+/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train/Potato leaf late blight/24064_1.jpg,duplicado de pixeles dentro de PlantDoc/train
+/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train/Tomato Septoria leaf spot/xgray-leaf-spot.jpg.pagespeed.ic.ltF8KfKtQ1.jpg,duplicado de pixeles dentro de PlantDoc/train
+/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train/Tomato leaf late blight/IMG_5360.jpg,duplicado de pixeles dentro de PlantDoc/train
+/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train/Tomato mold leaf/tylc.jpg,duplicado de pixeles dentro de PlantDoc/train

@@ -1,0 +1,37 @@
+{
+  "modelo": "/home/kaladin/Code/ProyectoIA/resultados_cct/mejor_cct.pt",
+  "epoch": 30,
+  "config": {
+    "image_size": 128,
+    "embed_dim": 128,
+    "depth": 4,
+    "heads": 4,
+    "dropout": 0.1
+  },
+  "species_names": [
+    "Apple",
+    "Blueberry",
+    "Cherry_(including_sour)",
+    "Corn_(maize)",
+    "Grape",
+    "Orange",
+    "Peach",
+    "Pepper,_bell",
+    "Potato",
+    "Raspberry",
+    "Soybean",
+    "Squash",
+    "Strawberry",
+    "Tomato"
+  ],
+  "health_names": [
+    "sana",
+    "enferma"
+  ],
+  "pv_csv": "/home/kaladin/Code/ProyectoIA/resultados_cct/test.csv",
+  "pv_root": "/home/kaladin/Code/ProyectoIA/PlantVillage-Dataset/raw/color",
+  "plantdoc_test": "/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/test",
+  "datasets": [
+    "plantvillage"
+  ]
+}

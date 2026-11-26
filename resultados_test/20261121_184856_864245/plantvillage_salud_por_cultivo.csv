@@ -1,0 +1,15 @@
+species,muestras,sanas,enfermas,accuracy_salud
+Apple,970,250,720,1.0
+Blueberry,227,227,0,1.0
+Cherry_(including_sour),438,228,210,1.0
+Corn_(maize),915,233,682,1.0
+Grape,903,212,691,1.0
+Orange,251,0,251,1.0
+Peach,446,216,230,0.9955156950672646
+"Pepper,_bell",488,249,239,1.0
+Potato,712,228,484,1.0
+Raspberry,223,223,0,0.9955156950672646
+Soybean,252,252,0,1.0
+Squash,217,0,217,1.0
+Strawberry,450,228,222,1.0
+Tomato,2290,239,2051,0.9995633187772925

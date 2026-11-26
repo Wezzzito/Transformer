@@ -1,0 +1,2 @@
+dataset,muestras,accuracy_especie,f1_especie,accuracy_salud,f1_salud,accuracy_conjunta
+plantvillage,10857,0.9962236345215069,0.9944894461770183,0.999078935249148,0.9988510773607486,0.9957631021460809

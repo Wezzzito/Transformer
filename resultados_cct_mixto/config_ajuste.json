@@ -1,0 +1,15 @@
+{
+  "modelo": "/home/kaladin/Code/ProyectoIA/resultados_cct_kaggle/mejor_cct.pt",
+  "splits_pv": "/home/kaladin/Code/ProyectoIA/resultados_cct_kaggle",
+  "raiz_rutas": "/home/kaladin/Code/ProyectoIA",
+  "plantdoc_train": "/home/kaladin/Code/ProyectoIA/PlantDoc-Dataset-master/train",
+  "salida": "/home/kaladin/Code/ProyectoIA/resultados_cct_mixto",
+  "epocas": 15,
+  "paciencia": 5,
+  "batch_size": 32,
+  "pasos": 0,
+  "lr": 1e-05,
+  "seed": 42,
+  "workers": 0,
+  "pasos_efectivos": 117
+}

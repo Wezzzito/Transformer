@@ -1,0 +1,2 @@
+dataset,muestras,accuracy_especie,f1_especie,accuracy_salud,f1_salud,accuracy_conjunta
+plantdoc,236,0.2669491525423729,0.1660318635249302,0.7838983050847458,0.7705111827177913,0.2457627118644068

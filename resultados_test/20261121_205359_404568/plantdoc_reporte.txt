@@ -1,0 +1,36 @@
+
+RESULTADOS: PLANTDOC (236 imagenes)
+Accuracy especie: 41.53% | F1 macro: 0.2938
+Accuracy salud: 85.59% | F1 macro: 0.8460
+Accuracy conjunto exacto: 38.14%
+                         precision    recall  f1-score   support
+
+                  Apple     0.2326    0.3448    0.2778        29
+              Blueberry     0.3000    0.2727    0.2857        11
+Cherry_(including_sour)     0.0000    0.0000    0.0000        10
+           Corn_(maize)     0.6452    0.7692    0.7018        26
+                  Grape     0.3684    0.3500    0.3590        20
+                  Peach     0.4000    0.2222    0.2857         9
+           Pepper,_bell     0.0000    0.0000    0.0000        17
+                 Potato     0.1538    0.1250    0.1379        16
+              Raspberry     0.1667    0.1429    0.1538         7
+                Soybean     0.0000    0.0000    0.0000         8
+                 Squash     0.8000    0.6667    0.7273         6
+             Strawberry     0.2308    0.3750    0.2857         8
+                 Tomato     0.5542    0.6667    0.6053        69
+
+               accuracy                         0.4153       236
+              macro avg     0.2963    0.3027    0.2938       236
+           weighted avg     0.3657    0.4153    0.3851       236
+
+SALUD
+              precision    recall  f1-score   support
+
+        sana     0.8256    0.7889    0.8068        90
+     enferma     0.8733    0.8973    0.8851       146
+
+    accuracy                         0.8559       236
+   macro avg     0.8495    0.8431    0.8460       236
+weighted avg     0.8551    0.8559    0.8553       236
+
+El F1 macro de la resumen usa especies presentes en las etiquetas reales. El reporte tambien muestra clases predichas sin soporte, si existen.

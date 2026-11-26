@@ -1,0 +1,11 @@
+{
+  "datos": "PlantDoc-Dataset-master/train",
+  "modelo": "resultados_cct/mejor_cct.pt",
+  "salida": "resultados_cct_ajustado",
+  "epocas": 15,
+  "batch_size": 32,
+  "paciencia": 5,
+  "validacion": 0.2,
+  "lr": 3e-05,
+  "semilla": 42
+}
