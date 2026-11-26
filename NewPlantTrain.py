@@ -12,6 +12,13 @@ from sklearn.model_selection import StratifiedShuffleSplit
 from sklearn.metrics import accuracy_score, f1_score, classification_report, ConfusionMatrixDisplay
 from tqdm.auto import tqdm
 
+###########################
+#Integrantes:
+#- Julio Pino Charun
+#- Emanuel Salas Ramos
+#- Gianella Rosas Lipa
+###########################
+
 # --- CONSTANTES Y CONFIGURACIÓN ---
 SEED = 42
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -332,13 +339,13 @@ if __name__ == '__main__':
     train_df = indexar_carpeta(TRAIN_DIR, verificar=VERIFICAR_IMAGENES)
     valid_full_df = indexar_carpeta(VALID_DIR, verificar=VERIFICAR_IMAGENES)
 
-    # 2. Eliminar de valid cualquier duplicado exacto que ya esté en train
+    # 2. Eliminar de valid cualquier duplicado exacto que ya este en train
     duplicados_cruzados = valid_full_df.digest.isin(set(train_df.digest))
     if duplicados_cruzados.any():
         print('Duplicados eliminados de valid (presentes en train):', int(duplicados_cruzados.sum()))
         valid_full_df = valid_full_df[~duplicados_cruzados].reset_index(drop=True)
 
-    # 3. Dividir valid en 50% validación y 50% test de forma estratificada
+    # 3. Dividir valid en 50% validacion y 50% test de forma estratificada
     splitter = StratifiedShuffleSplit(n_splits=1, test_size=0.5, random_state=SEED)
     val_idx, test_idx = next(splitter.split(valid_full_df, valid_full_df.joint))
     val_df = valid_full_df.iloc[val_idx].reset_index(drop=True)
@@ -360,7 +367,7 @@ if __name__ == '__main__':
     val_loader = crear_loader(val_df, species_to_id, train=False, size=CONFIG['image_size'])
     test_loader = crear_loader(test_df, species_to_id, train=False, size=CONFIG['image_size'])
 
-    # 5. Modelo y pérdidas
+    # 5. Modelo y perdidas
     model = CCTMultitarea(len(species_names), **CONFIG).to(DEVICE)
     print('Parámetros:', sum(p.numel() for p in model.parameters()))
     print('Tokens:', model.position.shape[1])
@@ -374,7 +381,7 @@ if __name__ == '__main__':
     plt.savefig(OUT_DIR / 'curva_perdida.png', bbox_inches='tight')
     plt.show()
 
-    # 7. Evaluación en test
+    # 7. Evaluacion en test
     model, checkpoint = cargar_modelo(OUT_DIR / 'mejor_cct.pt')
     test_metrics, predictions = ejecutar_epoca(
         model, test_loader, loss_species, loss_health, len(species_names)
